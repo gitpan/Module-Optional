@@ -3,7 +3,7 @@ use strict;
 
 BEGIN {
 	use vars qw ($VERSION $AUTOLOAD);
-	$VERSION     = 0.01;
+	$VERSION     = 0.02;
 }
 
 =head1 NAME
