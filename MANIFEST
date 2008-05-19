@@ -12,4 +12,5 @@ t/004_version.t
 t/pod.t
 t/pod_coverage.t
 Makefile.PL
+examples/Foo.pm
 META.yml                                 Module meta-data (added by MakeMaker)

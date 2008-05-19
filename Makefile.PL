@@ -9,4 +9,5 @@ WriteMakefile(
     PREREQ_PM    => {
                      'Test::Simple' => 0.44,
                     },
+    LICENSE      => 'perl',
 );

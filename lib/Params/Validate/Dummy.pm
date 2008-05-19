@@ -1,11 +1,12 @@
 package Params::Validate::Dummy;
 
 use strict;
+use warnings;
 
 BEGIN {
 	use Exporter ();
 	use vars qw ($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
-	$VERSION     = 0.01;
+	$VERSION     = 0.03;
 	@ISA         = qw (Exporter);
 	my %tags =
         ( types =>
@@ -71,7 +72,14 @@ Params::Validate::Dummy - Stub for Params::Validate
 This module provides stub routines for those who don't have Params::Validate
 installed. 
 
-For more details, please refer to the documentation for Params::Validate.
+For more details, please refer to the documentation for L<Params::Validate>.
+
+The code here is just stub routines which do NOTHING at all, passing through
+any arguments in the API and prototypes of L<Params::Validate>. In 
+particular, the dummy stubs do not do defaulting, validation, untainting or
+anything else that Params::Validate does. If you need this functionality,
+either provide it yourself in the surrounding code, or don't use this module
+and insist that the real Params::Validate is installed.
 
 =head2 C<validate>, C<validate_pos>
 
